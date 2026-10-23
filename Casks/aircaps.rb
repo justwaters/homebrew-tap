@@ -1,6 +1,6 @@
 cask "aircaps" do
-  version "1.3.0"
-  sha256 "1f9bbdecf9c26d818533ebb01db7f1ce326cae3a7bf384d2cf24d6c23380ecff"
+  version "1.3.1"
+  sha256 "12ff7fe92a3a86f0f0ede7acaa3c6551ed4e3d5fcbcc62b94f7dfb76df2ae48d"
 
   url "https://github.com/justwaters/AirCaps/releases/download/v#{version}/AirCaps.dmg"
   name "AirCaps"
@@ -17,11 +17,7 @@ cask "aircaps" do
   ]
 
   caveats <<~EOS
-    AirCaps is ad-hoc signed (no Apple Developer ID). On first launch,
-    right-click the app and choose Open, or allow it under
-    System Settings → Privacy & Security.
-
-    It needs Input Monitoring (System Settings → Privacy & Security).
+    AirCaps needs Input Monitoring (System Settings → Privacy & Security).
     If AirCaps isn't listed there, add it with the + button.
   EOS
 end
