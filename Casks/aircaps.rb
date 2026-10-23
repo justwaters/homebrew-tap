@@ -1,6 +1,6 @@
 cask "aircaps" do
-  version "1.2.0"
-  sha256 "2daeffcca573d545fbd624425fe03271896642e27576f3c86cb1ab6841f8dea0"
+  version "1.3.0"
+  sha256 "1f9bbdecf9c26d818533ebb01db7f1ce326cae3a7bf384d2cf24d6c23380ecff"
 
   url "https://github.com/justwaters/AirCaps/releases/download/v#{version}/AirCaps.dmg"
   name "AirCaps"
