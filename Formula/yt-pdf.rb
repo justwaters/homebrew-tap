@@ -3,8 +3,8 @@ class YtPdf < Formula
 
   desc "Turn YouTube videos into styled PDF reference guides with screenshots"
   homepage "https://github.com/justwaters/yt-pdf"
-  url "https://github.com/justwaters/yt-pdf/archive/refs/tags/v0.1.0.tar.gz"
-  sha256 "a3e814eb9a44675bd57d6f65db80bbdf235a2b32d6df91221aec867db0a7203c"
+  url "https://github.com/justwaters/yt-pdf/archive/refs/tags/v0.2.0.tar.gz"
+  sha256 "b9b5f325952e4d827c1f71d09eebcf4bf48312b7cb9578894d088c8974f39fee"
 
   depends_on "ffmpeg"
   depends_on "python@3.13"
@@ -28,12 +28,12 @@ class YtPdf < Formula
 
   def caveats
     <<~EOS
-      yt-pdf renders PDFs with Chromium, which needs a one-time download:
-        #{opt_libexec}/bin/playwright install chromium
-
-      Then add an API key and generate a PDF:
+      Add an API key, then generate a PDF:
         yt-pdf auth login
         yt-pdf "https://www.youtube.com/watch?v=VIDEO_ID"
+
+      PDFs are printed with Google Chrome or Microsoft Edge if installed; otherwise
+      the first run downloads Chromium's headless shell (about 100 MB, once).
     EOS
   end
 
