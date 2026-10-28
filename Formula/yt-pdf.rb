@@ -3,8 +3,8 @@ class YtPdf < Formula
 
   desc "Turn YouTube videos into styled PDF reference guides with screenshots"
   homepage "https://github.com/justwaters/yt-pdf"
-  url "https://github.com/justwaters/yt-pdf/archive/refs/tags/v0.2.0.tar.gz"
-  sha256 "b9b5f325952e4d827c1f71d09eebcf4bf48312b7cb9578894d088c8974f39fee"
+  url "https://github.com/justwaters/yt-pdf/archive/refs/tags/v0.3.0.tar.gz"
+  sha256 "de4187e8e758a030638b5914bf3a108e71ed2ab72935038d672d10e559937a25"
 
   depends_on "ffmpeg"
   depends_on "python@3.13"
